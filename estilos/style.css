@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+footer {
+    grid-area: footer;
+}
+section#productos {
+    grid-area: productos;     
+    display: flexbox;
+    flex-direction: row;
+}  
+
+header{
+    background-color: rgb(255, 152, 68);
+    grid-area: header;
+    display: grid;
+}
+
+ul li:hover{
+    background-color: rgb(230, 74, 2);
+    color: white;
+    height: 100px;
+    border: solid 10px;
+}
+nav{
+    background-color: rgb(0, 0, 0);  
+    grid-area: nav;
+    justify-content: space-between;
+}
+
+h1#titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+}
+h1{
+    background-color: rgb(255, 115, 0);
+    color: rgb(2, 17, 39);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(235, 167, 72);
+    justify-content: center;
+}
+dd{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(235, 167, 72);
+    justify-content: center;
+}
+#nos{ 
+    background-color: rgb(202, 82, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(250, 249, 246);
+}
+#barrios{
+    text-align:justify;
+    color: rgb(46, 38, 7);
+    font-size: 20px;
+    padding-left: 40%;
+    background-color: rgb(235, 167, 72);
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(231, 203, 165);
+}
+
+#tendencia{
+    background-color: red;
+}
+.form{
+width: fit-content;
+    
+}
+fieldset{
+    background-color: rgb(245, 177, 177);
+}
+.border {
+    border: 3px solid black;
+}
+
+ /*smartphone*/
+    @media screen and (max-width: 480px){
+        #grilla {
+            display: grid;
+            grid-template-areas:
+              "nav"
+              "header"
+              "productos"
+              "footer";
+            grid-template-rows: auto; 
+            grid-template-columns: auto;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            height: 100%;
+            margin: 0;	
+         }
+         
+        body{         
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        ul li {
+            list-style-type: none;
+            display:flexbox;
+            align-content: center;
+            flex-direction: column;
+            background-color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: height 2s;
+        }
+        
+    }
+
+/*Tablet*/
+    @media screen and (min-width: 481px) and (max-width: 1024px) {
+        #grilla {
+            display: grid;
+            grid-template-areas:
+              "nav nav"
+              "header header"
+              "productos publicidad"
+              "productos publicidad"
+              "footer footer";
+            grid-template-rows: 2fr 1fr ; 
+            grid-template-columns: auto 40%;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            height: 100%;
+            margin: 0;
+        }
+        aside {
+            display: flexbox;
+            flex-direction: row;
+           grid-area: publicidad;
+        }
+        body{   
+            
+            background: radial-gradient(circle, rgb(172, 203, 60) 0%, rgba(205,252,69,1) 100%);
+        }
+        ul li {
+            list-style-type: none;
+            display:flexbox;
+            align-content: center;
+            flex-direction: column;
+            background-color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: height 2s;
+        }
+        nav{
+            background-color: coral;
+            height: fit-content;
+        }
+        
+    }
+
+    /*Desktop*/
+    @media (min-width: 1024px ) {
+        #grilla {
+            display: grid;
+            grid-template-areas:
+              "nav header header header"
+              "nav productos productos publicidad"
+              "nav productos productos publicidad"
+              "nav footer footer footer";
+            grid-template-rows: auto 1fr 2fr 1fr; 
+            grid-template-columns: 10% auto auto 20%;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            height: 100vh;
+            margin: 0;	
+         }
+         aside {
+            display: flexbox;
+            flex-direction: column;
+           grid-area: publicidad;
+        }
+        nav{
+            background-color: coral;
+        }
+        body{   
+            
+            background: radial-gradient(circle, rgba(104,126,170,1) 0%, rgba(69,113,252,1) 100%);
+        }
+        ul li {
+            list-style-type: none;
+            display:flexbox;
+            align-content: center;
+            flex-direction: column;
+            background-color: white;
+            padding: 10px 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: height 2s;
+        }
+    }
