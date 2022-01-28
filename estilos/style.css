@@ -199,3 +199,9 @@ fieldset{
             transition: height 2s;
         }
     }
+    .animate__animated.animate__flash {
+        --animate-duration: 2s;
+      }
+      .animate__animated.animate__bounceIn{
+        --animate-duration: 5s;
+      }
