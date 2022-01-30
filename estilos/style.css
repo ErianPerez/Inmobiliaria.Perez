@@ -111,7 +111,6 @@ fieldset{
             display:flexbox;
             align-content: center;
             flex-direction: column;
-            background-color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             transition: height 2s;
         }
@@ -119,7 +118,7 @@ fieldset{
     }
 
 /*Tablet*/
-    @media screen and (min-width: 577px) and (max-width: 1024px) {
+    @media screen and (min-width: 577px) and (max-width: 768px) {
         #grilla {
             display: grid;
             grid-template-areas:
@@ -149,7 +148,6 @@ fieldset{
             display:flexbox;
             align-content: center;
             flex-direction: column;
-            background-color: white;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             transition: height 2s;
         }
@@ -161,7 +159,7 @@ fieldset{
     }
 
     /*Desktop*/
-    @media (min-width: 1024px ) {
+    @media (min-width: 992px ) {
         #grilla {
             display: grid;
             grid-template-areas:
@@ -193,7 +191,6 @@ fieldset{
             display:flexbox;
             align-content: center;
             flex-direction: column;
-            background-color: white;
             padding: 10px 20px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             transition: height 2s;
