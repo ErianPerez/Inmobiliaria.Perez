@@ -13,34 +13,56 @@
             <header class="border" id="arriba">
                 <h1 id="titulo" class="animate__animated animate__bounceIn" >Inmuebles EEUU</h1>
             </header>
-            <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./formulario.html">Contacto</a></li>
-                <li><a href="./barrios.html">Barrios</a></li>
-                <li><a href="./Ofertas.html">Ofertas</a></li>
-                <li><a href="./Extra.html">Nosotros</a></li>
-            </ul>
-            </nav>
-            
-        <main>
-            <article id="productos" class="border">
-                <iframe class="videos" width="860" height="315" src="https://www.youtube.com/embed/CHHLAeqyc3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p id="nos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna ligula, varius et egestas sit amet, consequat sed leo. Phasellus quis sem lectus. Maecenas finibus purus quis mattis efficitur. Quisque venenatis massa ac tempor porta. Cras nec tortor sit amet est gravida bibendum. Mauris in commodo arcu. Sed quis turpis turpis. Integer vitae ornare est. Integer ipsum leo, semper eu tempus ac, mollis ut libero. Donec non rutrum lectus. Nulla ullamcorper purus ipsum, nec accumsan lacus eleifend vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna ligula, varius et egestas sit amet, consequat sed leo. Phasellus quis sem lectus. Maecenas finibus purus quis mattis efficitur. Quisque venenatis massa ac tempor porta. Cras nec tortor sit amet est gravida bibendum. Mauris in commodo arcu. Sed quis turpis turpis. Integer vitae ornare est. Integer ipsum leo, semper eu tempus ac, mollis ut libero. Donec non rutrum lectus. Nulla ullamcorper purus ipsum, nec accumsan lacus eleifend vitae.</p>
-            </article>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Navegacion</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
         
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="../pages/formulario.html">Contacto<span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item active">
+                              <a class="nav-link" href="../pages/barrios.html">Barrios<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="../pages/Ofertas.html">Ofertas<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="../pages/Extra.html">Nosotros<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </nav>
+            
+         <main class="row">
+             <div class="border col-8 col-md-10" >
+                <article id="productos" class="border row">
+                    <iframe class="videos col-8" width="860" height="315" src="https://www.youtube.com/embed/CHHLAeqyc3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p id="nos" class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna ligula, varius et egestas sit amet, consequat sed leo. Phasellus quis sem lectus. Maecenas finibus purus quis mattis efficitur. Quisque venenatis massa ac tempor porta. Cras nec tortor sit amet est gravida bibendum. Mauris in commodo arcu. Sed quis turpis turpis. Integer vitae ornare est. Integer ipsum leo, semper eu tempus ac, mollis ut libero. Donec non rutrum lectus. Nulla ullamcorper purus ipsum, nec accumsan lacus eleifend vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna ligula, varius et egestas sit amet, consequat sed leo. Phasellus quis sem lectus. Maecenas finibus purus quis mattis efficitur. Quisque venenatis massa ac tempor porta. Cras nec tortor sit amet est gravida bibendum. Mauris in commodo arcu. Sed quis turpis turpis. Integer vitae ornare est. Integer ipsum leo, semper eu tempus ac, mollis ut libero. Donec non rutrum lectus. Nulla ullamcorper purus ipsum, nec accumsan lacus eleifend vitae.</p>
+                </article>
+            </div>
+            <div class="col-4 col-md-2">
+                <aside class="border"> 
+                    <H2 class="border">PUBLICIDAD</H2>
+                    <img class="img-fluid" alt="Responsive image"src="../assets/programming.jpg" id="anuncio" >
+                    <p>Deseas estudiar desde tu casa? Esto es lo que estabas esperando</p>
+                    <img class="img-fluid" alt="Responsive image" src="../assets/programming.jpg"id="anuncio" >
+                    <p>Deseas estudiar desde tu casa? Esto es lo que estabas esperando</p>
+                    <img class="img-fluid" alt="Responsive image" src="../assets/programming.jpg"  id="anuncio" >
+                    <p>Deseas estudiar desde tu casa? Esto es lo que estabas esperando</p>
+                </aside>
+            </div>  
         </main>
-        <aside class="border"> 
-            <H2 class="border">PUBLICIDAD</H2>
-            <img class="imagenes" src="../assets/programming.jpg" width="265" height="195" id="anuncio" alt="anuncio">
-            <p>Deseas estudiar desde tu casa? Esto es lo que estabas esperando</p>
-            <img class="imagenes" src="../assets/programming.jpg" width="265" height="195" id="anuncio" alt="anuncio">
-            <p>Deseas estudiar desde tu casa? Esto es lo que estabas esperando</p>
-            <img class="imagenes" src="../assets/programming.jpg" width="265" height="195" id="anuncio" alt="anuncio">
-            <p>Deseas estudiar desde tu casa? Esto es lo que estabas esperando</p>
-            
-        </aside>
-        
     </body>
     <footer class="border">Pie de pagina - Copyright2021® - desarrollado por: Erian Perez</footer>
 
