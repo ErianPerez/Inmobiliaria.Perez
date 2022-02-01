@@ -3,6 +3,9 @@
     margin: 0;
     
 }
+body{
+    width: 100%;
+}
 footer {
     grid-area: footer;
     color: darkblue;
@@ -101,6 +104,10 @@ fieldset{
         html {
             font-size: 1.2rem;
           }
+        .publicidad{
+            display: flex;
+            flex-direction: row;
+        }
         
         
     }
