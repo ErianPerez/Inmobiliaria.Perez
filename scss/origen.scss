@@ -1,1 +1,114 @@
-//Esto es un comentario de SCSS//
+//CSS de mi Proyecto//
+@import "colores";
+@import "responsive";
+/* STYLE */
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    width: 100%;
+}
+footer {
+    grid-area: footer;
+    color: darkblue;
+    background-color: rgb(231, 203, 165);
+}
+section#productos {
+    grid-area: productos;     
+    display: flexbox;
+    flex-direction: row;
+}  
+
+header{
+    background-color: rgb(255, 152, 68);
+    grid-area: header;
+    display: grid;
+}
+
+ul li:hover{
+    background-color: rgb(230, 74, 2);
+    color: white;
+    height: 100px;
+    border: solid 10px;
+}
+nav{
+    background-color: rgb(0, 0, 0);  
+    grid-area: nav;
+    justify-content: space-between;
+}
+
+
+h1{
+    background-color: $naranja;
+    color: rgb(2, 17, 39);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    h1#titulo{
+        font-family: $FuenteGothic;
+        text-align: left;
+    }
+}
+p{
+    font-family: $FuenteGothic;
+    font-size: 16px;
+    background-color: $anaranjado;
+    justify-content: center;
+}
+dd{
+    font-family: $FuenteGothic;
+    font-size: 16px;
+    background-color: $anaranjado;
+    justify-content: center;
+}
+#nos{ 
+    background-color: rgb(202, 82, 38);
+    font-family: $FuenteGothic;
+    color: rgb(250, 249, 246);
+}
+#barrios{
+    text-align:justify;
+    color: rgb(46, 38, 7);
+    font-size: 20px;
+    padding-left: 40%;
+    background-color: rgb(235, 167, 72);
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(231, 203, 165);
+}
+
+#tendencia{
+    background-color: $rojo;
+}
+.form{
+    width: 100%;
+    padding-left: 20px;  
+}
+fieldset{
+    background-color: rgb(245, 177, 177);
+}
+.border {
+    border: 5px solid black;
+}
+.link{
+    background-color: rgb(10, 248, 10);
+    color: rgb(0, 0, 0);
+}
+ 
+    .animate__animated.animate__flash {
+        --animate-duration: 2s;
+      }
+      .animate__animated.animate__bounceIn{
+        --animate-duration: 5s;
+      }
+
+      html {
+        font-size: 1rem;
+      }
+     

@@ -1,0 +1,15 @@
+/* FUENTES */
+$pDesktop:20px;
+$fontFamily: 'tahoma';
+$FuenteGothic: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.col-lg-6{
+	p{
+	font: {
+		size:$pDesktop;
+		family:$fontFamily;
+		weight:bold;
+		}
+	}
+
+} 
