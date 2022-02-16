@@ -1,0 +1,21 @@
+.btn {
+	width: 150px;
+	height: 50px;
+	border: 1px solid white;
+	border-radius: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	background-color:white;
+	text-align:center;
+}
+
+.btn--masinfo{
+	@extend .btn;
+	background-color:lightblue;
+	color:black;
+}
+.btn--aceptar{
+	@extend .btn;
+	background-color:rgb(47, 189, 134);
+	color:black;
+}

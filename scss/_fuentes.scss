@@ -13,3 +13,19 @@ $FuenteGothic: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	}
 
 } 
+/*MAPS*/
+
+$estilo-div: (
+  fuente: $FuenteGothic,
+  centro: left,
+  1rem : 1rem
+);
+div {
+    font-family: map-get($estilo-div, fuente);;
+    text-align: map-get($estilo-div, centro);
+    padding: map-get($estilo-div, 1rem);
+  }
+ 
+
+
+

@@ -7,6 +7,7 @@ $amarillo:yellow;
 $anaranjado: rgb(235, 167, 72);
 $naranja:rgb(255, 115, 0);
 $rojo: red;
+$blanco: white;
 
 .col-lg-6{
 	h1{
@@ -17,19 +18,3 @@ $rojo: red;
 	font-size:$pDesktop;
 	}
 } 
-
-.texto{
-	background:linear-gradient(to bottom, black, yellow);
-	&__encabezado{
-		color:$amarillo;
-	}
-	&__parrafo{
-		font-size:20px;
-		&--color{
-		color:$azul;
-		 @media only screen and (max-width:768px){
-		color:$amarillo;
-		}
-		}
-	}
-}

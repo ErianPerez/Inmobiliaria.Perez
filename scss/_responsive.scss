@@ -1,7 +1,13 @@
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 /*smartphone*/
 @media (max-width: 767.98px){
-
-    body{         
+    body{    
+        @include reset-list; 
+        width: 100%;    
         background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     }
     html {
@@ -18,12 +24,13 @@
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     aside {
+        @include reset-list;
         display: flexbox;
         flex-direction: row;
        grid-area: publicidad;
     }
     body{   
-        
+        width: 100%;
         background: radial-gradient(circle, rgb(172, 203, 60) 0%, rgba(205,252,69,1) 100%);
     }
     html {
@@ -40,6 +47,7 @@
 /*Desktop*/
 @media (min-width: 992px) {
      aside {
+        @include reset-list;
         display: flexbox;
         flex-direction: column;
        grid-area: publicidad;
@@ -48,7 +56,7 @@
         background-color: coral;
     }
     body{   
-        
+        width: 100%;
         background: radial-gradient(circle, rgba(104,126,170,1) 0%, rgba(69,113,252,1) 100%);
     }
     html {
@@ -56,3 +64,4 @@
       }
     
 }
+

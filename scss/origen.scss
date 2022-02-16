@@ -1,12 +1,11 @@
 //CSS de mi Proyecto//
 @import "colores";
 @import "responsive";
+@import "nav";
+@import "boton";
+@import "fuentes";
 /* STYLE */
-*{
-    padding: 0;
-    margin: 0;
-    
-}
+
 body{
     width: 100%;
 }
@@ -29,7 +28,6 @@ header{
 
 ul li:hover{
     background-color: rgb(230, 74, 2);
-    color: white;
     height: 100px;
     border: solid 10px;
 }
@@ -96,19 +94,15 @@ fieldset{
 .border {
     border: 5px solid black;
 }
-.link{
-    background-color: rgb(10, 248, 10);
-    color: rgb(0, 0, 0);
-}
  
-    .animate__animated.animate__flash {
-        --animate-duration: 2s;
-      }
-      .animate__animated.animate__bounceIn{
-        --animate-duration: 5s;
-      }
+.animate__animated.animate__flash {
+     --animate-duration: 2s;
+    }
+ .animate__animated.animate__bounceIn{
+    --animate-duration: 5s;
+    }
 
-      html {
-        font-size: 1rem;
-      }
+html {
+    font-size: 1rem;
+    }
      

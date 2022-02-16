@@ -4,6 +4,12 @@
   font-family: "tahoma";
   font-weight: bold; }
 
+/*MAPS*/
+div {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  padding: 1rem; }
+
 /* COLORES */
 .col-lg-6 h1 {
   color: blue; }
@@ -12,21 +18,13 @@
   color: yellow;
   font-size: 20px; }
 
-.texto {
-  background: linear-gradient(to bottom, black, yellow); }
-  .texto__encabezado {
-    color: yellow; }
-  .texto__parrafo {
-    font-size: 20px; }
-    .texto__parrafo--color {
-      color: blue; }
-      @media only screen and (max-width: 768px) {
-        .texto__parrafo--color {
-          color: yellow; } }
-
 /*smartphone*/
 @media (max-width: 767.98px) {
   body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
     background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%); }
   html {
     font-size: 1.2rem; }
@@ -37,10 +35,14 @@
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   aside {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flexbox;
     flex-direction: row;
     grid-area: publicidad; }
   body {
+    width: 100%;
     background: radial-gradient(circle, #accb3c 0%, #cdfc45 100%); }
   html {
     font-size: 1.4rem; }
@@ -51,21 +53,78 @@
 /*Desktop*/
 @media (min-width: 992px) {
   aside {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flexbox;
     flex-direction: column;
     grid-area: publicidad; }
   nav {
     background-color: coral; }
   body {
+    width: 100%;
     background: radial-gradient(circle, #687eaa 0%, #4571fc 100%); }
   html {
     font-size: 1.6rem; } }
 
-/* STYLE */
-* {
+/* FUENTES */
+.col-lg-6 p {
+  font-size: 20px;
+  font-family: "tahoma";
+  font-weight: bold; }
+
+/*MAPS*/
+div {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  padding: 1rem; }
+
+/* COLORES */
+.col-lg-6 h1 {
+  color: blue; }
+
+.col-lg-6 p {
+  color: yellow;
+  font-size: 20px; }
+
+.col-lg-12, .col-xs-12, .col-lg-4, .container-fluid, .row {
   padding: 0;
   margin: 0; }
 
+.nav-link {
+  color: white !important; }
+
+.btn, .btn--masinfo, .btn--aceptar {
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  background-color: white;
+  text-align: center; }
+
+.btn--masinfo {
+  background-color: lightblue;
+  color: black; }
+
+.btn--aceptar {
+  background-color: #2fbd86;
+  color: black; }
+
+/* FUENTES */
+.col-lg-6 p {
+  font-size: 20px;
+  font-family: "tahoma";
+  font-weight: bold; }
+
+/*MAPS*/
+div {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  padding: 1rem; }
+
+/* STYLE */
 body {
   width: 100%; }
 
@@ -86,7 +145,6 @@ header {
 
 ul li:hover {
   background-color: #e64a02;
-  color: white;
   height: 100px;
   border: solid 10px; }
 
@@ -148,10 +206,6 @@ fieldset {
 
 .border {
   border: 5px solid black; }
-
-.link {
-  background-color: #0af80a;
-  color: black; }
 
 .animate__animated.animate__flash {
   --animate-duration: 2s; }
